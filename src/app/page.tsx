@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { submitEarlyAccess, submitFeedback } from "./actions";
+import { Coiny } from "next/font/google";
+const coiny = Coiny({ weight: "400", subsets: ["latin"] });
 
 export default function ZonelyLanding() {
   const [accessEmail, setAccessEmail] = useState("");
@@ -50,22 +52,22 @@ export default function ZonelyLanding() {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 font-sans">
       {/* Navigation */}
-      <nav className="flex justify-between items-center p-6 max-w-6xl mx-auto">
-        <div className="text-2xl font-bold tracking-tighter text-indigo-600">Zonely.</div>
+      <nav className="flex justify-between items-center p-6 max-w-6xl mx-auto h-[100px]">
+        <div className={`text-3xl tracking-wide text-blue-400 ${coiny.className}`}>Zonely<span className="text-yellow-300">.</span></div>
         <a href="#early-access" className="bg-indigo-600 text-white px-5 py-2 rounded-full font-medium hover:bg-indigo-700 transition">
           Get Early Access
         </a>
       </nav>
 
       {/* Hero Section */}
-      <header className="max-w-6xl mx-auto px-6 py-24 md:py-32 text-center">
+      <header className="max-w-6xl mx-auto px-6 text-center min-h-[calc(100vh-100px)] flex flex-col justify-center items-center pb-20">
         <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-slate-900">
           Reclaim Your Focus.
         </h1>
         <p className="text-xl md:text-2xl text-slate-600 mb-10 max-w-3xl mx-auto leading-relaxed">
-          An empathetic, context-aware mobile application that dynamically transforms your smartphone interface based on your physical environment.[cite: 1]
+          An empathetic, context-aware mobile application that dynamically transforms your smartphone interface based on your physical environment.
         </p>
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
+        <div className="flex flex-col sm:flex-row justify-center gap-4 w-full">
           <a href="#early-access" className="bg-indigo-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-indigo-700 transition shadow-lg">
             Join the Free Early Access
           </a>
@@ -99,14 +101,14 @@ export default function ZonelyLanding() {
             <div className="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mb-6 text-2xl">📍</div>
             <h3 className="text-xl font-bold mb-3">Dedicated Contextual Modes</h3>
             <p className="text-slate-600">
-              Automatically switch between specialized interfaces optimized for Home, School, Library, and Gym environments without manual intervention.[cite: 1]
+              Automatically switch between specialized interfaces optimized for Home, School, Library, and Gym environments without manual intervention.
             </p>
           </div>
           <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
             <div className="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mb-6 text-2xl">⏱️</div>
             <h3 className="text-xl font-bold mb-3">Deep Focus Tools</h3>
             <p className="text-slate-600">
-              Stay engaged with integrated Pomodoro timers, interactive academic timetables, and ambient focus audio designed for uninterrupted study sessions.[cite: 1]
+              Stay engaged with integrated Pomodoro timers, interactive academic timetables, and ambient focus audio designed for uninterrupted study sessions.
             </p>
           </div>
           <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
