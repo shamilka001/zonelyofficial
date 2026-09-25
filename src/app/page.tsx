@@ -130,7 +130,7 @@ export default function ZonelyLanding() {
             <div className="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mb-6 text-2xl">🔕</div>
             <h3 className="text-xl font-bold mb-3">Automated Do Not Disturb</h3>
             <p className="text-slate-600">
-              Zonely integrates native Do Not Disturb toggling that activates the moment you enter focus-critical zones like libraries or classrooms.
+              Zonely integrates native Do Not Disturb toggling that activates the moment you enter focus-critical zones like classrooms.
             </p>
           </div>
           <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
